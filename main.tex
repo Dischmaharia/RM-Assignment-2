@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
-\title{RM Assignment 2}
+\title{Research Methodology - Assignment 2}
 \date{February 2019}
 
 \begin{document}
@@ -12,68 +12,82 @@
 \hline
      \textbf{Student name} & \textbf{P. No.} & \textbf{Contribution} \\
      \hline
-     Sylvain Roncoroni & 990109T018 & \\
-     Claudio Bertozzi & 930206T578 & \\
-     Hassan Mehmood & 9205054837 & \\
-     Ehtasham ul haq & 9111168770\\
+     Sylvain Roncoroni & 990109T018 & 25\\
+     Claudio Bertozzi & 930206T578 & 25\\
+     Hassan Mehmood & 9205054837 & 25\\
+     Ehtasham ul haq & 9111168770 & 25\\
      \hline
 \end{tabular}
 
 
 \section{Scenario 1}
 \subsection{Assumptions}
-We assume that the employee who participate in the experiment know both methods.
+We assume that the employees who participate in the experiment know both development methods.
 
 \subsection{Research questions}
-We are assuming that TDD leads to a better quality in fewer time. For this reason we want to ensure these two hypothesis.
+What are the benefits, if any, of test-driven development over test-last development in software development on code quality?
+We think that TDD leads to a better quality in fewer time. For this reason we want to ensure this hypothesis: \\
 H1: TDD improves the quality of the software compared to TLD.
 
 \subsection{Research methodology}
-For the first scenario we suggest to do an experiment in which we ask half of the people participating to write code using TDD and the other half using TLD. Then using criteria/metrics to determine the quality of the code they wrote (reliability, number of defects, security, etc.), we can see which method gives the best results.\\
+For the first scenario we suggest to do an experiment in which we ask half of the people participating to write code using TDD and the other half using TLD. Then using criteria/metrics to determine the quality of the code they wrote (reliability, number of defects, etc.), we can see which method gives the best results.\\
 Independent variables:
 \begin{itemize}
-    \item
+    \item Method used (TDD or TLD)
+    \item Code written
+    \item Developers
 \end{itemize}
 Dependent variables:
 \begin{itemize}
-    \item
+    \item Quality of code estimated on a scale from 1 to 5 (from very bad to very good)
+    \item Number of defects in the code for each method
 \end{itemize}
+Population: a sample of the developers of the company who wishes to participate \\
+Objects: code written \\
+Subjects: development method \\
+Treatments: compute the mean for the quality of code and the number of defects for each method
 
 \subsection{Justification}
----??? An experiment is required because we want to measure the benefits and drawbacks of each method.\\
-An other option would be to do a case study in which a lot of different project would be compared. But it would be extremely difficult to isolate the the dependent variables to justify the findings.
-
+Arguments for an experiment: Multiple companies are using TLD and could benefit from TDD, so it's more relevant to make an experiment to draw more general conclusions. \\
+Alternatives: Another possibility is to do a case study for this particular company and compare the two methods. \\
+Potential limitations: though it is possible to try to generalize the results, it probably needs further research and results to justify it.
 
 \section{Scenario 2}
 \subsection{Assumptions}
-We assume that the employee who answer the survey have already worked with both TDD and TLD.
+We assume that the employee who answer the survey have already worked with both TDD and TLD for a big enough period of time.
 
 \subsection{Research questions}
-Q1: Do the employees from the company X prefer to work with TDD compared to TLD?
+Q1: Do the developers from the company X prefer to work with TDD compared to TLD?
 
 \subsection{Research methodology}
 Create a questionnaire to know which method is favored by the developers of the company but also if they are ready to change and adapt to the other method and if they have any reservations regarding the new method.
 Population is the employees; sampling strategy is to simply ask all employees to answer the survey. \\
 Independent variables:
 \begin{itemize}
-    \item Employees
+    \item Developers of the company
 \end{itemize}
 Dependent variables:
 \begin{itemize}
-    \item Preferred method measured by percentage of employee who prefers it
+    \item Preferred method measured by percentage of employees who prefers it over the other
     \item Percentage of developers ready to change for the other method
-    \item Reservations of employees regarding the new method
+    \item Reservations of employees regarding the new method (nominal scale)
 \end{itemize}
+Population: the developers of the company. \\
+Objects: development method. \\
+Subjects:  preferred method. \\
+Treatments: compute the percentage if employees who favors TDD over TLD and the percentage of employees who are ready to change their method. If not both of them are over 50\%, then the reservations will be analyzed to make a final decision.
 
 \subsection{Justification}
-An experiment could also take place, so that the employees first had to work with the different techniques. However, in this scenario, the only aim of the study is to know which method is preferred by the employees. So, the easiest way to know is to simply ask for their opinion and the survey is well-fitted for this task. 
-
+Arguments for a survey: In this scenario, the only aim of the study is to know which method is preferred by the employees. So, the easiest way to know is to simply ask for their opinion and the survey is well-fitted for this task. \\
+Alternatives: An experiment could also take place, so that the employees first had to work with the different techniques. \\
+Potential limitations: All the results are coming from the answers of the people answering the questionnaire. They cannot be forced to participate or to answer without influence of others. 
 
 \section{Scenario 3}
 \subsection{Assumptions}
+No assumptions were made for this case.
 
 \subsection{Research questions}
-Q1: How can the current used agile development process in the company X be improved to become more efficient?
+Q1: How can the current used agile development process in the company X be improved to become more efficient in both time and code quality?
 
 \subsection{Research methodology}
 In this scenario we would do a case study during which we analyze the performance of the agile development process. We are interested in the following points:
@@ -82,10 +96,13 @@ In this scenario we would do a case study during which we analyze the performanc
     \item Possible improvements
     \item The problems the employee face with the current process – problems linked to the way they work, not the work itself
 \end{itemize}
-To do that, we can observe their agile development process during multiple projects (if they are small enough) or multiple sprints. Then interview some developers to help us get the global view of the way they work and ask their opinion about the problems they may see with this method of working and how this can be improved/problems be solved. Additionally, we will search for other research papers which provide solutions for the problems found.
+Data collection method: observation of the agile development process during multiple projects or sprints. Interview of some developers to get further details on their method of work and their opinion on possible improvements.\\
+Data sources: observation of the major project in the company. Interviewed developers will be randomly picked among those who wish to participate.
 
 \subsection{Justification}
-The only choice is a case study because the goal is to benchmark the performance of a specific process in a company which first has to be investigated.
+Reason for a case study: The goal is to benchmark the performance of a specific process in a company. Because there is no documentation about the actually used process, first it has to be investigated.
+Alternatives: A case study is the only choice to investigate a process which is not documented precisely at the moment. \\ 
+Potential limitations: There could be some factors affecting the observation which are not fully understood. So, the case study is only showing how the process works during the time of investigation.
 
 
 \section{Scenario 4}
@@ -96,19 +113,30 @@ H1: Algorithm A is more effective than algorithm B. \\
 H2: Algorithm A is more efficient than algorithm B.
 
 \subsection{Research methodology}
-For this scenario we suggest to do en experiment. First we have to create a source code with corresponding test cases. We will need test cases that will be detected by the algorithms or else it is not that useful. Run both algorithms on the test case suite and measure the following:
+For this scenario we suggest to do en experiment. First we have to create a source code with corresponding test cases. We will need test cases that will be detected by the algorithms or else it is not that useful. Run both algorithms on the test case suite and measure the following (these are the dependent variables):
 \begin{itemize}
-    \item Time taken to execute
+    \item Time taken to execute in seconds
     \item Number of test cases that fails and are detected by the algorithm (true positive)
     \item Number of test cases that succeeds and are not detected (true negative)
     \item Number of test cases that fails and are not detected (false negative)
     \item Number of test cases that succeeds and are detected (false positive)
 \end{itemize}
-Analyze the results and compare the time taken and the precision of each algorithm for each test case suite and finally make a global comparison.
+The variables presented above can also be expressed as a percentage. \\
+And the independent variables are:
+\begin{itemize}
+    \item The code
+    \item The test cases
+\end{itemize}
+Population: algorithms A and B. \\
+Objects: code snippets and corresponding test cases. \\
+Subjects: performance for effectiveness and efficiency. \\
+Treatments: compute the time taken on each snippet for each algorithm and compare them to know on average which algorithm is faster. Compute the precision and recall of each algorithm to on each code snippet then compare the average values to measure the efficiency.
 
 \subsection{Justification}
-We want to measure performance of two algorithms, so we need to make an experiment to get values on which it’s possible to work and make an analysis to compare the algorithms.
+Reason for an experiment: We want to measure performance of two algorithms, so we need to make an experiment to get values on which it’s possible to work and make an analysis to compare the algorithms.
 The time taken to execute is used to compare the effectiveness.
-The other measures are used to calculate the precision and the recall of each algorithm which give us an idea of the relevance of the results given.
+The other measures are used to calculate the precision and the recall of each algorithm which give us an idea of the relevance of the results given. \\
+Alternatives: There are no alternatives. \\
+Potential limitations: There is the danger of having a good test result in the experimental environment, which afterwards behave different in the environment of a company.
 
 \end{document}
